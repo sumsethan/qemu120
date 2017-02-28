@@ -207,7 +207,7 @@ do
         get_cmd="cat /tmp/usb_files/$FILENAME"
       else
         echo -e "\n\nDownloading $FILENAME\n\n"
-        get_cmd="wget -O - http://cr-48-ubuntu.googlecode.com/files/$FILENAME"
+        get_cmd="wget -O - https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cr-48-ubuntu/$FILENAME"
       fi
     write_is_valid=0
     while [ $write_is_valid -ne 1 ]
