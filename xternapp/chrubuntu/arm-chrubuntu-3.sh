@@ -181,7 +181,7 @@ do
     do
       if [ ! -f /mnt/stateful_partition/ubuntu/$FILENAME.sha1 ]
       then
-        wget http://cr-48-ubuntu.googlecode.com/files/$FILENAME.sha1
+        wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cr-48-ubuntu/$FILENAME.sha1
       fi
       correct_sha1=`cat $FILENAME.sha1 | awk '{print $1}'`
       correct_sha1_length="${#correct_sha1}"
